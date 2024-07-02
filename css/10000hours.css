@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+        url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body {
+    font-family: "Gmarket Sans";
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #5B2386;
+    color: #FFFFFF;
+}
+
+button {
+    font-family: "Gmarket Sans";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    border: none;
+    padding: 21px 49px;
+    border-radius: 56px;
+    background-color: #FCEE21;
+    color: #5B2386;
+    width: fit-content;
+    box-shadow: 0px 0px 10px 0px #00000080;
+}
+
+header {
+    position: relative;
+    margin-top: 120px;
+}
+
+header .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+h1 {
+    font-family: OTEnjoystoriesBA;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39.6px;
+    color: #F5DF4D;
+    margin-top: 46px;
+}
+
+.d1 {
+    position: relative;
+    margin-top: 78px;
+}
+
+.d1 p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.d1 p span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.d1 .quotes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.d2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 102px;
+}
+
+.d2 input {
+    font-family: "Gmarket Sans";
+    font-size: 24px;
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.b1 {
+    margin-top: 115px;
+}
+
+.p2 {
+    font-family: Gmarket Sans;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 147px;
+}
+
+.p2 span {
+    font-family: Gmarket Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+.d3 {
+    margin-top: 127px;
+}
+
+.d3 .share {
+    background-color: #FFFFFF;
+    color: #5B2386;
+    margin-left: 18px;
+}
+
+footer {
+    font-family: Noto Sans KR;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.38px;
+    margin-top: 130px;
+}
+
+.modal {
+    width: 800px;
+    height: 800px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #00000080;
+    font-family: OTEnjoystoriesBA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-950%);
+    color: #5B2386;
+}
+
+.modal h2 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 105.6px;
+    margin-top: 76px;
+}
+
+.modal h2::after {
+    content: "♥♥♥";
+}
+
+.modal p {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39.6px;
+    margin-top: -75.278px;
+}
+
+.modal .licat {
+    margin-top: -7px;
+}
+
+.modal button {
+    margin-top: 74px;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    body {
+        padding: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    header {
+        transform-origin: top center;
+        transform: scale(0.5);
+        margin-top: 41px;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 24.2px;
+        margin-top: -114.857px;
+    }
+
+    .d1 {
+        margin-top: 62px;
+    }
+
+    .d1 p {
+        font-size: 14px;
+    }
+
+    .d1 p span {
+        font-size: 14px;
+    }
+
+    .d2 {
+        font-size: 14px;
+        margin-top: 62px;
+    }
+
+    .d2 input {
+        font-size: 14px;
+        width: 156px;
+        height: 37px;
+    }
+
+    .b1 {
+        padding: 16px 40px;
+        border-radius: 13px;
+        margin-top: 49px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        margin-top: 64px;
+    }
+
+    .p2 span {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .d3 {
+        margin-top: 55px;
+    }
+
+    .d3 .go {
+        padding-left: calc((186px - 152.482px)/2);
+        padding-right: calc((186px - 152.482px)/2);
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .d3 .share {
+        margin-left: 13px;
+        padding-left: calc((92px - 53.875px)/2);
+        padding-right: calc((92px - 53.875px)/2);
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    footer {
+        font-size: 9px;
+        line-height: 13.03px;
+        margin-top: 83px;
+    }
+
+    .modal {
+        width: 330px;
+        height: 500px;
+        transform: translateX(-950%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal h2 {
+        font-size: 64px;
+        line-height: 70.4px;
+        margin-top: 40px;
+    }
+
+    .modal h2::after {
+        content: "";
+    }
+
+    .modal p {
+        margin-top: -57.513px;
+    }
+
+    .modal .licat {
+        margin-top: -12px;
+        width: calc(100%*241/330);
+    }
+
+    .modal button {
+        margin-top: 34px;
+        border-radius: 13px;
+        padding-left: 4.5px;
+        padding-right: 4.5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
