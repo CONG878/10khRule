@@ -1,0 +1,309 @@
+body {
+    padding-top: 120px;
+}
+
+header {
+    position: relative;
+    height: 265px;
+}
+
+header .clock {
+    position: absolute;
+}
+
+header .title {
+    position: absolute;
+    transform-origin: top;
+    transform: translateY(74px) scale(0.5);
+}
+
+main .motivational-text {
+    padding: 10px 0;
+}
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 0;
+    position: relative;
+}
+
+.quotes {
+    position: absolute;
+    transform: translateY(31px);
+}
+
+.goal-setting {
+    padding: 32.5px 0;
+}
+
+.goal-setting input {
+    width: 224px;
+    height: 55px;
+    border: none;
+    border-radius: 7px;
+    margin: 13.5px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.calculate {
+    margin: 45px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.calculate::after {
+    content: '';
+    background-image: url(../img/click.png);
+    width: 64px;
+    height: 72px;
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%) translate(7px, 17px);
+}
+
+.result {
+    padding: 78px 0;
+}
+
+.result strong {
+    line-height: 80.5px;
+}
+
+.buttons {
+    margin: 25px 0;
+    display: flex;
+    gap: 18px;
+}
+
+footer {
+    padding: 70px 0;
+    gap: 20px;
+}
+
+footer img {
+    width: 125px;
+    margin-top: 35px;
+}
+
+footer small {
+    text-align: center;
+}
+
+dialog {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    height: 800px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 #00000080;
+    padding: 0;
+}
+
+dialog[open] {
+    display: flex;
+}
+
+h2 {
+    margin: 76px 0 0 0;
+}
+
+h2::after {
+    content: '♥♥♥';
+}
+
+dialog p.motivational-text {
+    margin: 4px 0;
+}
+
+dialog img {
+    margin: 25px 0;
+}
+
+dialog button {
+    margin-top: 49px;
+}
+
+@media screen and (max-width: 426px) {
+
+    /* Font size adjustments */
+    p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    main .motivational-text {
+        font-size: 22px;
+        line-height: 24.2px;
+    }
+
+    .explanation p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .explanation p strong {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    p.result strong {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    h2 {
+        font-size: 64px;
+        line-height: 70.4px;
+    }
+
+    dialog p.motivational-text {
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+
+    small {
+        font-size: 9px;
+        line-height: 13.03px;
+    }
+
+    button {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0;
+        height: 40px;
+    }
+
+    button.primary {
+        border-radius: 7px;
+        width: 241px;
+        height: 68px;
+    }
+
+    /* Size and location adjustments */
+    body {
+        padding-top: 41px;
+    }
+    
+    header {
+        height: 125px;
+    }
+    
+    header .clock {
+        transform-origin: top;
+        transform: scale(calc(125/265));
+    }
+    
+    header .title {
+        transform: translateY(35px) scale(calc(267/1128));
+    }
+    
+    main .motivational-text {
+        padding: 10px 0;
+    }
+    
+    .explanation {
+        padding: 16px 0;
+    }
+    
+    .quotes {
+        transform-origin: top;
+        transform: translateY(33.5px) scale(calc(302/493));
+    }
+    
+    .goal-setting {
+        padding: 3px 0;
+        line-height: 14px;
+    }
+
+    .goal-setting span {
+        display: block;
+    }
+    
+    .goal-setting input {
+        width: 152px;
+        height: 35px;
+        margin: 19px 0 17px;
+        font-size: 14px;
+    }
+    
+    .calculate {
+        margin: 15px 0;
+        transform: translateX(-3.5px);
+    }
+
+    .calculate span {
+        display: block;
+    }
+    
+    .calculate::after {
+        width: 43px;
+        height: 48px;
+        background-size: contain;
+        transform: translateX(100%) translate(6px, 20px);
+    }
+    
+    .result {
+        padding: 35px 0;
+        line-height: 31.5px;
+    }
+    
+    .buttons {
+        margin: 6px 0;
+        gap: 13px;
+        transform: translateX(-3.5px);
+    }
+
+    button.action {
+        width: 186px;
+    }
+
+    button.share {
+        width: 92px;
+    }
+    
+    footer {
+        padding: 32px 0;
+        gap: 17px;
+    }
+    
+    footer img {
+        width: 91px;
+        margin-top: 45px;
+    }
+    
+    dialog {
+        width: clamp(270px, calc(330/360 * 100%), 367px);
+        height: 500px;
+    }
+    
+    h2 {
+        margin: 40px 0 0 0;
+    }
+    
+    h2::after {
+        content: '';
+    }
+    
+    dialog p.motivational-text {
+        margin: -4px 0;
+    }
+    
+    dialog img {
+        margin: 28px 0;
+        width: 241px;
+    }
+    
+    dialog button {
+        margin: 6px 0;
+    }
+    dialog button span {
+        display: block;
+    }
+}
