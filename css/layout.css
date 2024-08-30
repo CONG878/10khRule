@@ -11,6 +11,7 @@
 
 @font-face {
     font-family: 'Gmarket Sans';
+    src: url('../fonts/GmarketSansBold.otf') format('otf');
     src: url('../fonts/GmarketSansTTFBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -18,6 +19,7 @@
 
 @font-face {
     font-family: 'Gmarket Sans';
+    src: url('../fonts/GmarketSansMedium.otf') format('otf');
     src: url('../fonts/GmarketSansTTFMedium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
